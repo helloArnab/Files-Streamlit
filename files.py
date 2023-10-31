@@ -7,7 +7,7 @@ df = st.file_uploader("Upload the file : ",type= ['csv','xlsx'])
 #     st.dataframe(df)
 
 st.subheader("Loading the CSV File.")
-df = pd.read_csv("D:\Data Science\Streamlit\Products.csv")
+df = pd.read_csv("Products.csv")
 if df is not None:
     st.table(df.head())
 
